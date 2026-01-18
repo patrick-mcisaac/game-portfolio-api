@@ -11,3 +11,6 @@ class Contact(models.Model):
     developer = models.ForeignKey(
         "Developer", on_delete=models.CASCADE, related_name="contact"
     )
+
+    def __str__(self):
+        return f"{self.name}"
