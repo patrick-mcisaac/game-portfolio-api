@@ -132,7 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS = os.getenv("CORS_ORIGINS")
+CORS_ALLOWED_ORIGINS = os.getenv("CORS_ORIGINS").split(",")
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
