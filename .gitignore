@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environments
+.env
+venv/
+env/
+
+# Django
+db.sqlite3
+local_settings.py
+media/
+static/
+*.log
+
+# OS and IDE
+.DS_Store
+.idea/
+.vscode/
+
+*.dbml
+*.dbml.layout
+*.designer.cs
+seed.sh
