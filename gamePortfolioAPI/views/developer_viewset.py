@@ -15,8 +15,8 @@ class DeveloperView(ViewSet):
         username = request.query_params.get("username")
 
         if username is not None:
-            developer = Developer.objects.filter(username=username)
-            ser = DeveloperSerializer(developer, many=True)
+            developer = Developer.objects.get(username=username)
+            ser = DeveloperSerializer(developer, many=False)
             return Response(ser.data, status=status.HTTP_200_OK)
         return Response(None, status=status.HTTP_400_BAD_REQUEST)
 
