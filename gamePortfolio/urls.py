@@ -18,10 +18,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import SimpleRouter
-from gamePortfolioAPI.views import DeveloperView
+from gamePortfolioAPI.views import DeveloperView, ContactViews
 
 router = SimpleRouter(trailing_slash=False)
-router.register("developers", DeveloperView, "developer")
+router.register(r"developers", DeveloperView, "developer")
+router.register(r"contacts", ContactViews, "contact")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
