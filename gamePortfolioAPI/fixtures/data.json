@@ -1,0 +1,77 @@
+[
+{
+  "model": "gamePortfolioAPI.developer",
+  "pk": "5dae6638-ab18-4b70-889c-ffdb08619726",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$vwN3eq8iNBvg80Jafywive$emYMfRlJp9bSzHiY2o8DsErh40To+76IjUSFAGVSkwM=",
+    "last_login": "2026-01-18T22:44:37Z",
+    "is_superuser": true,
+    "username": "patrick-dev",
+    "email": "patrick.mcisaac.dev@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-18T22:40:45Z",
+    "first_name": "Patrick",
+    "last_name": "McIsaac",
+    "logo": "",
+    "about": "Before my journey into software development, I was a full-time musician. I spent some time self-studying HTML and CSS and discovered I really enjoyed coding. Eventually I realized it was time to make the jump into tech professionally.\r\n\r\nProblem solving and creative thinking skills from music, and the joy of figuring things out made the switch natural. Whether I'm debugging code or building something from scratch, I approach it the same way I approached music: with patience, attention to detail, and a joy for solving problems.",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "gamePortfolioAPI.contact",
+  "pk": 1,
+  "fields": {
+    "name": "email",
+    "link": "patrick.mcisaac.dev@gmail.com",
+    "developer": "5dae6638-ab18-4b70-889c-ffdb08619726"
+  }
+},
+{
+  "model": "gamePortfolioAPI.contact",
+  "pk": 2,
+  "fields": {
+    "name": "linkedin",
+    "link": "https://www.linkedin.com/in/patrick-mcisaac/",
+    "developer": "5dae6638-ab18-4b70-889c-ffdb08619726"
+  }
+},
+{
+  "model": "gamePortfolioAPI.contact",
+  "pk": 3,
+  "fields": {
+    "name": "github",
+    "link": "https://github.com/patrick-mcisaac",
+    "developer": "5dae6638-ab18-4b70-889c-ffdb08619726"
+  }
+},
+{
+  "model": "gamePortfolioAPI.contact",
+  "pk": 4,
+  "fields": {
+    "name": "unity",
+    "link": "https://play.unity.com/en/user/3070a59a-a44c-4b2a-9ea4-e5254d4c55dd",
+    "developer": "5dae6638-ab18-4b70-889c-ffdb08619726"
+  }
+},
+{
+  "model": "gamePortfolioAPI.gameimage",
+  "pk": 1,
+  "fields": {
+    "image": "game_image/Screenshot_2026-01-18_170001.png",
+    "game": 1
+  }
+},
+{
+  "model": "gamePortfolioAPI.game",
+  "pk": 1,
+  "fields": {
+    "title": "Learning Unity",
+    "description": "First game from going through the unity essentials course.",
+    "link": "https://play.unity.com/en/games/6b2ff351-4279-4008-b69d-ef3dd03054b3/learning-unity",
+    "learned": "learned to use the unity interface, add audio and manipulate 3d objects.",
+    "developer": "5dae6638-ab18-4b70-889c-ffdb08619726"
+  }
+}
+]
