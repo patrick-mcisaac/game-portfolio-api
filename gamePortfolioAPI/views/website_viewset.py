@@ -15,6 +15,14 @@ class WebsiteViews(ViewSet):
         ser = WebsiteSerializer(websites, many=True)
         return Response(ser.data, status=status.HTTP_200_OK)
 
+    def retrieve(self, request, pk=None):
+        try:
+            website = Website.objects.get(pk=pk)
+            ser = WebsiteSerializer(website, many=False)
+            return Response(ser.data, status=status.HTTP_200_OK)
+        except Website.DoesNotExist:
+            return Response(None, status=status.HTTP_404_NOT_FOUND)
+
 
 class WebsiteImageSerializer(serializers.ModelSerializer):
 
