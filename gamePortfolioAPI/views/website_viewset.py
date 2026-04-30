@@ -37,4 +37,4 @@ class WebsiteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Website
-        fields = ("id", "description", "learned", "link", "title", "images")
+        fields = ("id", "description", "learned", "title", "images")

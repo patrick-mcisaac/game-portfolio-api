@@ -6,6 +6,7 @@ from gamePortfolioAPI.models import (
     GameImage,
     Website,
     WebsiteImage,
+    WebsiteLink
 )
 
 
@@ -31,3 +32,4 @@ admin.site.register(Game)
 admin.site.register(GameImage, GameImageAdminSerializer)
 admin.site.register(Website)
 admin.site.register(WebsiteImage, WebsiteImageAdminSerializer)
+admin.site.register(WebsiteLink, WebsiteImageAdminSerializer)

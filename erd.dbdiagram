@@ -1,0 +1,144 @@
+{
+  "version": "1.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "Developer",
+      "schemaName": "public",
+      "x": 26.25276521482158,
+      "y": -67.6278840165685
+    },
+    {
+      "name": "Contact",
+      "schemaName": "public",
+      "x": 41.51213222002002,
+      "y": 168.12570115810962
+    },
+    {
+      "name": "GameImage",
+      "schemaName": "public",
+      "x": -260.8245531618558,
+      "y": 172.87662289638342
+    },
+    {
+      "name": "Game",
+      "schemaName": "public",
+      "x": -260.8245531618558,
+      "y": -67.6278840165685
+    },
+    {
+      "name": "WebsiteImage",
+      "schemaName": "public",
+      "x": 510.0924773679452,
+      "y": 168.12570115810962
+    },
+    {
+      "name": "Website",
+      "schemaName": "public",
+      "x": 275.01709265380794,
+      "y": -67.6278840165685
+    },
+    {
+      "name": "WebsiteLink",
+      "schemaName": "public",
+      "x": 311.05273718505794,
+      "y": 168.12570115810962
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": [
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Developer",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "developerId"
+      ],
+      "secondTableName": "Contact",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Game",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "game"
+      ],
+      "secondTableName": "GameImage",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Developer",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "developerId"
+      ],
+      "secondTableName": "Game",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Website",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "website"
+      ],
+      "secondTableName": "WebsiteImage",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Developer",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "developerId"
+      ],
+      "secondTableName": "Website",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "id"
+      ],
+      "firstTableName": "Website",
+      "firstSchemaName": "public",
+      "firstRelation": "1",
+      "secondFieldNames": [
+        "websiteId"
+      ],
+      "secondTableName": "WebsiteLink",
+      "secondSchemaName": "public",
+      "secondRelation": "*",
+      "checkPoints": []
+    }
+  ]
+}
